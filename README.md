@@ -1,2 +1,3 @@
-# To-Do-List
- Experimenting with React.js and creating a to do list website.
+Download the modules by going into the same dir with "cd" command
+
+npm install.
