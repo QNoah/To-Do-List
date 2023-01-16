@@ -17,12 +17,95 @@ nav a{
   text-decoration: none;
   margin-left: 16px;
   padding: 6px;
+  color: white;
+  border-radius: 8px;
 }
 .content{
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  background: rgb(84, 93, 218);
 }
 .content h1{
   text-align: center;
+  color: rgb(223, 223, 223);
+}
+.section-list-box{
+  display: flex;
+  margin-top: 25px;
+  max-width: 800px;
+}
+.list-box{
+  width: 300px;
+  max-width: 300px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background: pink;
+}
+.list-box .title{
+  display: flex;
+  align-items: center;
+  border-bottom: #333 3px solid;
+  background: rgb(185, 18, 185);
+  padding: 5px;
+}
+.list-box .title h3{
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.title-buttons{
+  justify-content: space-between;
+  width: 50%;
+}
+.list-box .item{
+  padding: 10px;
+  font-size: .8em;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.list-box .item p{
+  width: 150px;
+  color: black;
+}
+.list-box .item button{
+  width: 40px;
+  height: 20px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: .8em;
+}
+form{
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+form .input-add-task{
+  width: 65%;
+  height: 25px;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 2.5%;
+  text-indent: 10px;
+  background: rgba(185, 18, 185, 0.39);
+  color: white;
+}
+form .input-add-task::placeholder{
+  padding-left: 10px;
+  color: white;
+}
+form button{
+  width: 20%;
+  height: 25px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  background: rgb(185, 18, 185);
+  font-size: .8em;
+  margin-right: 10px;
 }
