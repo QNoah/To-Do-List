@@ -9,9 +9,14 @@ nav{
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
   border-bottom: 1px solid rgba(129, 129, 129, 0.295);
+  background: #333;
+  justify-content: center;
+}
+nav h1{
+  color: white;
+  font-size: 1.5em;
 }
 nav a{
   text-decoration: none;
@@ -20,11 +25,15 @@ nav a{
   color: white;
   border-radius: 8px;
 }
+/* End: src\Navbar.js */
+
+/* Begin: src\Home.js */
 .content{
-  max-width: 600px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px;
   background: rgb(84, 93, 218);
+  margin-top: 10px;
 }
 .content h1{
   text-align: center;
@@ -33,14 +42,14 @@ nav a{
 .section-list-box{
   display: flex;
   margin-top: 25px;
-  max-width: 800px;
+  max-width: 50%;
 }
 .list-box{
-  width: 300px;
-  max-width: 300px;
+  width: 100%;
   border: 2px solid black;
   border-radius: 8px;
   background: pink;
+  flex-shrink: 0;
 }
 .list-box .title{
   display: flex;
@@ -48,15 +57,13 @@ nav a{
   border-bottom: #333 3px solid;
   background: rgb(185, 18, 185);
   padding: 5px;
+  justify-content: center;
 }
 .list-box .title h3{
   color: white;
-  margin: 0 auto;
-  text-align: center;
 }
 .title-buttons{
-  justify-content: space-between;
-  width: 50%;
+  margin-left: 2%;
 }
 .list-box .item{
   padding: 10px;
@@ -64,9 +71,13 @@ nav a{
   display: flex;
   align-items: center;
   padding-bottom: 5px;
+  margin-left: 50px;
+}
+.list-box .item .item-buttons{
+  padding-left: 2%;
 }
 .list-box .item p{
-  width: 150px;
+  width: 50%;
   color: black;
 }
 .list-box .item button{
@@ -76,6 +87,10 @@ nav a{
   border: none;
   color: white;
   font-size: .8em;
+}
+.action-images-list{
+  height: 35px;
+  width: auto;
 }
 form{
   display: flex;
@@ -108,4 +123,41 @@ form button{
   background: rgb(185, 18, 185);
   font-size: .8em;
   margin-right: 10px;
+}
+.list-box-desc{
+  padding-left: 10px;
+}
+.list-box-desc p{
+  color: white;
+  font-size: .8em;
+  width: 300px;
+}
+.list-box-desc button{
+  width: 80px;
+  height: 20px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: .8em;
+  background: green;
+}
+/* End: src\Home.js */
+/* Begin: src\list.js */
+.collection-of-lists{
+  margin-top: 20px;
+}
+.list-preview{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid rgb(54, 67, 187);
+}
+.list-preview:hover{
+  box-shadow: 3px 3px 15px rgb(54, 67, 187);
+  border: 1px solid rgb(151, 151, 151)
+}
+#create-new{
+  display: flex;
+  justify-content: flex-end;
 }
